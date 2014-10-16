@@ -18,11 +18,12 @@
     %meta(name='apple-mobile-web-app-capable' content='yes')
     %meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
 
+    / Google Fonts http://www.google.com/fonts/specimen/Open+Sans
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}
+
     / Stylesheets
     = stylesheet_link_tag 'reset'
     = stylesheet_link_tag 'main'
-    / Google Fonts http://www.google.com/fonts/specimen/Open+Sans
-    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans", :rel => "stylesheet", :type => "text/css"}/
 
   %body{class: current_page.data.body_class || 'page'}
     = yield
