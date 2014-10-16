@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #6495ED;
+
+  &:hover, &:focus {
+    color: blue;
+  }
+  &:visited {
+    color: cornfolowerblue;
+  }
+  &:focus {
+    outline: none; //For firefox
+  }
+}
+
+
+// For Clearing Floats
+.group:before, .group:after { content: ""; display: table; }
+.group:after { clear: both; }
+.group { zoom: 1; /* IE6&7 */ }
+
+
+.site {
+  width: 960px;
+  margin: 35px auto;
+}
+
+header {
+  margin-bottom: 15px;
+}
+
+
+.category {
+  float: left;
+
+  p {
+    &:first-child {
+      font-size: 16px;
+    }
+    &:nth-child(2) {
+      font-size: 24px;
+    }
+  }
+}
+
+.userOptions {
+  float: right;
+  text-align: right;
+}
+
+.viewMode {
+  margin-bottom: 5px;
+}
+button {
+  font-size: 13px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:disabled {
+    background-color: lightGray;
+  }
+}
+
+nav {
+  a {
+    margin: 0 5px;
+    text-decoration: underline;
+  }
+  a:first-child {
+    margin: 0 15px 0 0; 
+  }
+  a:last-child {
+    margin: 0 0 0 15px;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  float: left;
+  list-style: none;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+}
+
+
+.columns4 li {
+  width: 23.5%;
+  margin-right: 2%;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+
+.columns3 li {
+  width: 32%;
+  margin-right: 2%;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+

@@ -1,0 +1,62 @@
+---
+title: Anton
+/ body_class: index
+---
+
+
+.site
+  %header.group
+    %section.category
+      %p Women's category
+      %p Dresses
+    %section.userOptions
+      .viewMode
+        %button#viewThree 3 Columns
+        %button#viewFour{disabled: true} 4 Columns
+      %nav
+        %a{href: '#'} &laquo; Prev
+        %a{href: '#'} 1
+        %a{href: '#'} 2
+        %a{href: '#'} 3
+        %a{href: '#'} Next&raquo;
+
+  %main.group
+    %ul#imageHolder.columns4
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+      %li
+        %img{src:'./images/placeholder.gif', alt:'placeholder', title:'placeholder'}
+
+
+/ JQUERY CDN
+= javascript_include_tag  "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
+/ JQUERY Fallback
+:javascript
+    window.jQuery || document.write('<script src="./fallback/jquery-2.1.1.min.js"><\/script>')
+
+/ scripts
+= javascript_include_tag "viewMode.js"
+
+
+/ More Scripts
+:javascript
