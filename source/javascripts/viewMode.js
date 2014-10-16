@@ -16,6 +16,6 @@
   $('#viewFour').on('click', function() {
     $('#imageHolder').removeClass( "columns3" ).addClass( "columns4" );
     // Disable button 4 and Enable button 3
-    $(this).prop('disabled', true).prev().prop('disabled', false);;
+    $(this).prop('disabled', true).prev().prop('disabled', false);
   });
 })(jQuery);
